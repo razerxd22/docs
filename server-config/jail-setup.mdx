@@ -1,0 +1,37 @@
+---
+title: "Jail setup"
+description: "Setting up jail in your Discord server."
+icon: ""
+---
+
+<CardGroup cols={2}>
+  <Card title="Jail setup" icon="handcuffs" href="#setting-up-jail">
+    Automatically create a channel named 'jail'—a restricted area for users who violate server rules.
+  </Card>
+  <Card title="How to jail or unjail a user" icon="question" href="#jailing-users">
+    Learn how to enforce server rules by restricting users with the jail system. This automatically creates a channel where rule-breakers are confined.
+  </Card>
+</CardGroup>
+
+# Setting up jail
+
+<Steps>
+  <Step title="Configuring Jail">
+    - Use the `.jailsetup` command in any channel.<br />
+    - This will automatically create a `jail` channel, a category named `cypher mod`, and a `jail-logs` channel.<br />
+    - You can rename these channels later to fit your preferences.
+  </Step>
+</Steps>
+
+# Jailing users
+
+<Steps>
+  <Step title="Jailing a User">
+    - Use the command `.jail (user)`, for example: `.jail @encrypted`.<br />
+    - This command will mute the user in all channels except the `jail` channel.
+  </Step>
+  <Step title="Unjailing a User">
+    - Use the command `.unjail (user)`, for example: `.unjail @encrypted`.<br />
+    - This command will remove the restrictions and restore the user's access.
+  </Step>
+</Steps>

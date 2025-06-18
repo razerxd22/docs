@@ -1,0 +1,35 @@
+---
+title: "Setting up goodbye"
+description: "Setting up the channels and message for goodbye event"
+---
+
+<CardGroup cols={2}>
+  <Card title="Welcome setup" icon="shield" href="/server-config/welcome-setup">
+    Create, edit and setup your welcome message & channels and truly customise
+    it to your needs making it unique to yourself.
+  </Card>
+</CardGroup>
+
+## Creating a goodbye channel
+
+<Steps>
+  <Step title="Create the channel">
+    Setup permissions for the channel with the desired name, for this example we
+    will be using `#goodbye`
+  </Step>
+</Steps>
+
+## Creating an embed and setting the goodbye channel
+
+<Steps>
+  <Step title="Creating the goodbye embed">
+    Go to the [Embed builder](https://cypherbot.space/embed) And create a custom embed for your welcome setup for more information regarding variables:
+    [/resources/placeholders](/resources/placeholders) and for emebds go to: [/resources/embeds](/resources/embeds)
+  </Step>
+  <Step title="Setup the welcome channel">
+    Run the `.welcome channel` command which will give you further information, for this
+    example we'll run: `.welcome channel #welcome` this is well setup the welcome channel next we will run the `.welcome message`. command which will setup the custom welcome message example we'll run `.welcome message {embed}$v{description: Welcome to {server.name}}`
+  </Step>
+</Steps>
+
+

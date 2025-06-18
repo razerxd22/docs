@@ -1,0 +1,66 @@
+---
+title: "Media Commands"
+description: "Transform your images and videos with Evict's media manipulation commands."
+icon: "image"
+---
+
+<Tip>
+  All commands require an image url or an attachment.
+</Tip>
+## Image Effects
+
+<CardGroup cols={2}>
+  <Card title="Deepfry" icon="fire">
+    `media deepfry` (*file) - Apply a deepfried filter to a photo
+  </Card>
+  <Card title="Blur" icon="circle-dot">
+    `media blur` (*file, *radius) - Blur an image with specified radius (1-20)
+  </Card>
+  <Card title="Zoom Blur" icon="magnifying-glass">
+    `media zoomblur` (*file) - Apply a zoom blur effect to an image
+  </Card>
+  <Card title="Rainbow" icon="rainbow">
+    `media rainbow` (*file) - Apply an animated rainbow color effect to your photo
+  </Card>
+</CardGroup>
+
+## Animation Effects
+
+<CardGroup cols={2}>
+  <Card title="Reverse" icon="arrow-rotate-left">
+    `media reverse` (*file) - Reverse the playback of a video or GIF
+  </Card>
+  <Card title="Zoom" icon="magnifying-glass-plus">
+    `media zoom` (*file) - Create a zooming gif using your photo
+  </Card>
+  <Card title="Speed" icon="gauge">
+    `media speed` (*file, *speed) - Change the speed of a GIF (0.5 = slower, 2.0 = faster)
+  </Card>
+  <Card title="Scramble" icon="shuffle">
+    `media scramble` (*file) - Randomize frames within the given media
+  </Card>
+</CardGroup>
+
+## Meme Creation
+
+<CardGroup cols={2}>
+  <Card title="Caption" icon="quote-left">
+    `media caption` (*file, *caption) - Create your own caption meme using an image
+  </Card>
+  <Card title="Classic Meme" icon="font">
+    `media meme` (*file, *flags) - Create a top and bottom text meme
+  </Card>
+  <Card title="Flag" icon="flag">
+    `media flag` (*file) - Put a selected image onto a flag GIF
+  </Card>
+</CardGroup>
+
+## Examples
+
+<Frame>
+  <img src="/images/applications/media.png" />
+</Frame>
+
+<Note>
+  All commands require at least an image or gif file input. Make sure your file is in a supported format (PNG, JPG, GIF).
+</Note>

@@ -1,0 +1,126 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Cypher",
+  "logo": {
+    "dark": "/favicon.svg",
+    "light": "/favicon.svg"
+  },
+  "analytics": {
+    "ga4": {
+      "measurementId": "G-ZHEH4NB1B7"
+    }
+  },
+
+  "favicon": "favicon.svg",
+  "feedback": {
+    "thumbsRating": true,
+    "suggestEdit": true
+  },
+  "colors": {
+    "primary": "#CCCCFF",
+    "light": "#E5E5FF",
+    "dark": "#9999CC",
+    "anchors": {
+      "from": "#FFB6C1", 
+      "to": "#CCCCFF"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "Discord",
+      "url": "https://discord.gg/evict"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Home",
+    "url": "https://evict.bot"
+  },
+  "primaryTab": {
+    "name": "Cypher Bot"
+  },
+  "tabs": [],
+  "navigation": [
+    {
+      "group": "Get Started",
+      "pages": [
+        "introduction",
+        "quickstart"
+      ]
+    },
+    {
+      "group": "Configuration",
+      "pages": [
+        {
+          "group": "Welcome & Leave",
+          "pages": [
+            "server-config/welcome-setup",
+            "server-config/leave-setup"
+          ],
+          "icon": "bell"
+        },
+        {
+          "group": "Roles",
+          "pages": [
+            "server-config/booster-roles",
+            "server-config/vanity-roles",
+            "server-config/button-roles"
+          ],
+          "icon": "user"
+        },
+        {
+          "group": "Security",
+          "pages": [
+            "server-config/anti-raid",
+            "server-config/anti-nuke",
+            "server-config/logging",
+            "server-config/jail-setup"
+          ],
+
+          "icon": "gear"
+        },
+        {
+          "group": "Auto moderation",
+          "pages": [
+            "auto/invite",
+            "auto/link",
+            "auto/spam",
+            "auto/words"
+          ],
+
+          "icon": "fingerprint"
+        },
+        "server-config/reactions",
+        "server-config/webhooks",
+        "server-config/ticket"
+      ]
+    },
+    {
+      "group": "Resources",
+      "pages": [
+        "resources/placeholders",
+        "resources/embeds",
+        "resources/fake-permissions"
+      ]
+    },
+    {
+      "group": "Miscellaneous",
+      "pages": [
+        "server-config/ticket",
+        "server-config/webhooks"
+      ]
+    },
+    {
+      "group": "Image Manipulation",
+      "pages": [
+        "applications/image-manipulation/overview",
+        "applications/image-manipulation/media",
+        "applications/image-manipulation/animate",
+        "applications/image-manipulation/filter"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "discord": "https://evict.bot/discord",
+    "github": "https://github.com/x32u/docs"
+  }
+}

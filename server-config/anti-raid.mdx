@@ -1,0 +1,79 @@
+---
+title: "Anti-raid"
+description: "Anti-raid in Discord is like a protective barrier that keeps your server safe from trolls and spammers trying to crash your online party."
+---
+
+Anti-raid in Discord is like a protective barrier that keeps your server safe from trolls and spammers trying to crash your online party.
+
+## Subcommands
+
+### `antiraid avatar`  
+**Module:** `antiraid`  
+**Description:** Security against accounts which don't have an avatar.
+
+<Tabs>
+  <Tab title="Example">
+    ```bash
+    antiraid avatar on --do kick
+    ```
+  </Tab>
+  <Tab title="Syntax">
+    ```bash
+    antiraid avatar (status) [flags]
+    ```
+  </Tab>
+  <Tab title="Punishment Types">
+    - `ban`: Bans the user when threshold is met  
+    - `kick`: Kicks the user when threshold is met 
+  </Tab>
+</Tabs>
+
+---
+
+### `antiraid massjoin`  
+**Module:** `antiraid`  
+**Description:** Security against accounts which join simultaneously. If multiple members join within the `threshold` (must be >3) they will be automatically punished.
+
+<Tabs>
+  <Tab title="Example">
+    ```bash
+    antiraid massjoin on --do ban --threshold 5 --lock true
+    ```
+  </Tab>
+  <Tab title="Syntax">
+    ```bash
+    antiraid massjoin (status) [flags]
+    ```
+  </Tab>
+  <Tab title="Punishment Types">
+    - `ban`: Bans the user  
+    - `kick`: Kicks the user  
+    - `mute`: Times out the user  
+  </Tab>
+</Tabs>
+
+---
+
+---
+
+### `antiraid age`  
+**Module:** `antiraid`  
+**Description:** Security against accounts which are below a certain created time.
+
+<Tabs>
+  <Tab title="Example">
+    ```bash
+    antiraid age on --do ban --threshold 5
+    ```
+  </Tab>
+  <Tab title="Syntax">
+    ```bash
+    antiraid age (status) [flags]
+    ```
+  </Tab>
+  <Tab title="Punishment Types">
+    - `ban`: Bans the user  
+    - `kick`: Kicks the user  
+    - `timeout`: Times out the user  
+  </Tab>
+</Tabs>

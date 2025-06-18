@@ -1,0 +1,82 @@
+---
+title: 'Ticket'
+description: 'Setup ticketing for your server'
+icon: 'ticket'
+---
+
+
+# Category 
+Setup a category where all the tickets will be created.
+
+<CodeGroup>
+
+  ```bash Example
+  ?ticket cateogry Support 2482582852812
+  ```
+
+</CodeGroup>
+
+<Info>
+If you do not use topics or and want the tickets to be created in a specific category, use "default" to set the default category
+</Info>
+
+# Support Role
+Select a support role for the ticket system. This role can close tickets, view them and add/remove members from the ticket.
+
+<CodeGroup>
+
+  ```bash Example
+  ?ticket support Support @TicketsManager
+  ```
+
+</CodeGroup>
+
+# Ticket Topics
+Create multiple ticket topics to have a better overview of your tickets.
+
+<CodeGroup>
+  ```bash Example
+  ?ticket topic add Support
+  ```
+
+
+</CodeGroup>
+
+<Tip>
+Edit the existing topics using the commands given below.
+</Tip>
+
+```bash
+?ticket topic name <topic> <name>
+?ticket topic emoji <topic> <emoj>
+```
+
+# Ticket Create embed
+To setup a ticket create embed use `ticket setup` command.
+
+
+<CodeGroup>
+  ```bash Example
+  ?ticket setup
+  ```
+
+</CodeGroup>
+
+If you don't want the default ticketing embed, you can create one yourself. Go to [Embed Builder](https://cypherbot.space/embed).
+
+After you have finished Customizing your embed, click on "Generate Code" button and copy it with "Copy Code" button
+
+<CodeGroup>
+
+  ```bash Syntax
+  ?ticket setup [code]
+  ```
+  ```bash Example
+  ?ticket setup {embed}$v{color: #800080}$v{title: Ticket setup}$v{description: Create a ticket using the button below}
+  ```
+
+</CodeGroup>
+
+<Frame>
+  <img src="/images/server\ticket/ticketsetup.png" />
+</Frame>

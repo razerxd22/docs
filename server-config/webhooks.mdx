@@ -1,0 +1,67 @@
+---
+title: "Webhooks"
+description: "Learn how to create webhooks, edit and send them to specific channels for creating embeds such as rules with your own customisation utilizing `;webhook`."
+icon: "screwdriver-wrench"
+---
+
+<Note>
+    This requires process the `manage_webhooks` permission.
+</Note>
+
+## Create a webhook
+Command:`.webhook create` <br />
+Help: Create a new webhook. <br />
+
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Syntax: .webhook create (name) (icon)
+       Example: .webhook create Myhook https://icon.link/
+       ```
+    </Tab>
+</Tabs>
+
+<Tip>
+    You may want to copy the indentifier if you're going to utilize the webhook right afterwards. If lost, use `.webhook list` to retrieve it.
+</Tip>
+
+
+
+## Sending messages with webhooks
+Command:`.webhook send` <br />
+Help: Send a message through a webhook. <br />
+
+<Tabs>
+    <Tab title="Syntax">
+       ```
+       Example: .webhook send (identifier) (script or message)
+       Example: .webhook send X7W5o7EB Hello, how are you?
+       ```
+    </Tab>
+</Tabs>
+
+
+## How to view a list of all your webhooks
+Command:`.webhook list` <br />
+Help: View all the existing webhooks across all channels <br />
+
+<Tabs>
+    <Tab title="Usage">
+    ```
+    Syntax: .webhook list 
+    ```
+    </Tab>
+</Tabs>
+
+## Deleting your webhooks
+Command:`.webhook delete` <br />
+Help: Delete an exiting webhook. <br />
+
+<Tabs>
+    <Tab title="Usage">
+    ```
+    Syntax: .webhook delete (identifier)
+    Example: .webhook delete X7W5o7EB
+    ```
+    </Tab>
+</Tabs>

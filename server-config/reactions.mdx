@@ -1,0 +1,141 @@
+---
+title: 'Reactions'
+description: 'Allow members to assign roles to themselves & autoresponders by reacting.'
+icon: 'icons'
+---
+
+<CardGroup cols={2}>
+  <Card title="Reaction Roles" icon="child-reaching" href="#reaction-roles">
+    Setup reaction roles to allow users to automatically assign themself roles which
+    could be used in scenarios such as gender roles, age roles and region roles.
+  </Card>
+  <Card
+    title="Reaction Responders"
+    icon="face-smile"
+    href="#reaction-responders"
+  >
+    Automatically respond to specific triggers with a reaction, which is widely used by our
+    developers, engages the community even more.
+  </Card>
+</CardGroup>
+
+<Tip>You could use these to setup gender based or region based (or even both!) reaction roles.</Tip>
+
+### Table of Contents:
+<AccordionGroup>
+  <Accordion title="Reaction Roles Commands" icon="child-reaching">
+    - [add](#rr-add): Add a new reaction role to a message.
+    - [remove](#rr-remove): Remove a reaction role from a message.
+    - [list](#rr-list): View all reaction roles.
+    - [clear](#rr-clear): Remove all reaction roles.
+  </Accordion>
+  <Accordion title="Reaction Responders Commands" icon="face-smile">
+    - [add](#r-add): Add a new reaction trigger.
+    - [list](#r-list): View all reaction triggers.
+    - [remove](#r-remove): Remove a reaction trigger.
+  </Accordion>
+</AccordionGroup>  
+
+## Reaction Roles
+
+Allow members to assign roles to themselves.
+
+Subcommand: `reactionrole add` <br /> Help: Add a new reaction role to a message.
+
+<div id="rr-add"/>
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Syntax: .reactionrole add (messageid) (emoji) (role)
+       Example: .reactionrole add 1384874626970161172 :cowboy: @Cowboy
+       ```
+    </Tab>
+</Tabs>
+
+
+
+<br />
+
+Subcommand: `reactionrole remove` <br /> Help: Remove a reaction role from a message.
+
+<div id="rr-remove"/>
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Syntax: .reactionrole remove (messageid) (emoji)
+       Example: .reactionrole remove 1384874626970161172 :cowboy: 
+       ```
+    </Tab>
+</Tabs>
+
+<br />
+
+Subcommand: `reactionrole list` <br /> Help: View all reaction roles.
+
+<div id="rr-list"/>
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Example: .reactionrole list
+       ```
+    </Tab>
+</Tabs>
+
+
+<br />
+
+Subcommand: `reactionrole clear` <br /> Help:  Remove all reaction roles.
+
+<div id="rr-clear"/>
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Syntax: .reactionrole clear (messageid)
+       Example: .reactionrole clear 1384874626970161172
+       ```
+    </Tab>
+</Tabs>
+
+## Reaction Responders
+
+Subcommand: `auotreaction add` <br /> Help: Add a new reaction trigger.
+
+<div id="r-add"/>
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Syntax: .autoreaction add (message) (emoji)
+       Example: .autoreaction add Hey :wave:
+       ```
+    </Tab>
+</Tabs>
+
+
+<br />
+
+Subcommand: `auotreaction list` <br /> Help: View all reaction triggers.
+
+<div id="r-list"/>
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Example: .auotreaction list
+       ```
+    </Tab>
+</Tabs>
+
+<br />
+
+Subcommand: `reaction remove` <br /> Help: Remove a reaction trigger.
+
+<div id="r-remove"/>
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Syntax: .autoreaction remove (message) 
+       Example: .autoreaction remove Hey
+       ```
+    </Tab>
+</Tabs>
+
+<br />
