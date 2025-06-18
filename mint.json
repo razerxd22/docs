@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Cypher",
   "logo": {
-    "dark": "/favicon.svg2",
-    "light": "/favicon.svg2"
+    "dark": "favicon.svg",
+    "light": "favicon.svg"
   },
   "analytics": {
     "ga4": {
@@ -11,7 +11,7 @@
     }
   },
 
-  "favicon": "favicon.svg2",
+  "favicon": "favicon.svg",
   "feedback": {
     "thumbsRating": true,
     "suggestEdit": true
