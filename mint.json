@@ -28,12 +28,12 @@
   "topbarLinks": [
     {
       "name": "Discord",
-      "url": "https://discord.gg/evict"
+      "url": "https://discord.gg/cypherbot"
     }
   ],
   "topbarCtaButton": {
     "name": "Home",
-    "url": "https://evict.bot"
+    "url": "https://cypherbot.space"
   },
   "primaryTab": {
     "name": "Cypher Bot"
@@ -120,7 +120,6 @@
     }
   ],
   "footerSocials": {
-    "discord": "https://evict.bot/discord",
-    "github": "https://github.com/x32u/docs"
+    "discord": "https://discord.gg/hgV2Ev2Jjq"
   }
 }

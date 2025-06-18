@@ -1,32 +1,24 @@
 ---
 title: "Setting up welcome"
 description: "Setting up the channels and message for both welcome & leave events"
-icon: ""
 ---
 
 <CardGroup cols={2}>
-  <Card
-    title="Leave setup"
-    icon="arrows-to-circle"
-    href="/server-config/leave-setup"
-  >
+  <Card title="Leave setup" icon="arrows-to-circle" href="/server-config/leave-setup">
     Create, edit and setup your leave message & channels and truly customise it
     to your needs making it unique to yourself.
   </Card>
 </CardGroup>
 
 <Tip>
-  When setting up help messages, you can use `embedsetup` to easily generate
-  scripts/codes that are compatible with Evict.
+  When setting up help messages, you can use `embedsetup` to easily generate scripts/codes that are compatible with Cypher.
 </Tip>
 
 ## Creating a welcome channel
 
-
 <Steps>
   <Step title="Head over to your Discord Server">
-    Click on the Discord Server that you would like to setup welcome for using
-    Evict.
+    Click on the Discord Server that you would like to setup welcome for using Cypher.
   </Step>
   <Step title="Create the channel">
     Setup permissions for the channel with the desired name, for this example we
@@ -46,4 +38,3 @@ icon: ""
     example we'll run: `.welcome channel #welcome` this is well setup the welcome channel next we will run the `.welcome message`. command which will setup the custom welcome message example we'll run `.welcome message {embed}$v{description: Welcome to {server.name}}`
   </Step>
 </Steps>
-
