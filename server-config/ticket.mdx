@@ -4,46 +4,55 @@ description: 'Setup ticketing for your server'
 icon: 'ticket'
 ---
 
+## Setting a Ticket Category
 
-# Category 
-Setup a category where all the tickets will be created.
+Subcommand: `.ticket category`  
+Help: Define the category where all tickets will be created. If you don’t want to use ticket topics and prefer a default category, use `"default"`.
 
-<CodeGroup>
 
-  ```bash Example
-  ?ticket cateogry Support 2482582852812
-  ```
-
-</CodeGroup>
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Syntax: .ticket category (categoryID)
+       Example: .ticket category 289541825812951
+       ```
+    </Tab>
+</Tabs>
 
 <Info>
-If you do not use topics or and want the tickets to be created in a specific category, use "default" to set the default category
+If you don't use topics and want tickets to go to a specific category, use `"default"` as the category name.
 </Info>
 
-# Support Role
-Select a support role for the ticket system. This role can close tickets, view them and add/remove members from the ticket.
+## Assigning a Support Role
 
-<CodeGroup>
+Subcommand: `.ticket support`  
+Help: Set a role that can view, close, and manage tickets, including adding or removing members.
 
-  ```bash Example
-  ?ticket support Support @TicketsManager
-  ```
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Syntax: .ticket support (role)
+       Example: .ticket support @TicketManager
+       ```
+    </Tab>
+</Tabs>
 
-</CodeGroup>
+## Managing Ticket Topics 
 
-# Ticket Topics
-Create multiple ticket topics to have a better overview of your tickets.
+Subcommand: `.ticket topic`  
+Help: Add, edit, and organize multiple ticket topics for better ticket sorting and management.
 
-<CodeGroup>
-  ```bash Example
-  ?ticket topic add Support
-  ```
-
-
-</CodeGroup>
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Syntax: .ticket topic add (name) [emoji]
+       Example: .ticket topic add Support :support:
+       ```
+    </Tab>
+</Tabs>
 
 <Tip>
-Edit the existing topics using the commands given below.
+Edit existing topics using the following commands:
 </Tip>
 
 ```bash
@@ -51,32 +60,32 @@ Edit the existing topics using the commands given below.
 ?ticket topic emoji <topic> <emoj>
 ```
 
-# Ticket Create embed
-To setup a ticket create embed use `ticket setup` command.
+
+## Creating a Ticket Embed 
+Subcommand: `.ticket setup`  
+Help: Generate the ticket panel with a button. You can use the default template or create your own custom embed.
 
 
-<CodeGroup>
-  ```bash Example
-  ?ticket setup
-  ```
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Example: .ticket setup
+       ```
+    </Tab>
+</Tabs>
 
-</CodeGroup>
+Want a custom embed instead of the default? Use our Embed Builder. Once finished, click "Generate Code" then "Copy Code". For more information regarding variables, see our [Placeholders Guide](/resources/placeholders), and for more embed options, visit the [Embed Documentation](/resources/embeds).
 
-If you don't want the default ticketing embed, you can create one yourself. Go to [Embed Builder](https://cypherbot.space/embed).
+
 
 After you have finished Customizing your embed, click on "Generate Code" button and copy it with "Copy Code" button
 
-<CodeGroup>
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Syntax: .ticket setup [code]
+       Example: .ticket setup {embed}$v{color: #800080}$v{title: Ticket Setup}$v{description: Create a ticket using the button below}
+       ```
+    </Tab>
+</Tabs>
 
-  ```bash Syntax
-  ?ticket setup [code]
-  ```
-  ```bash Example
-  ?ticket setup {embed}$v{color: #800080}$v{title: Ticket setup}$v{description: Create a ticket using the button below}
-  ```
-
-</CodeGroup>
-
-<Frame>
-  <img src="/images/server\ticket/ticketsetup.png" />
-</Frame>
