@@ -93,14 +93,6 @@
       ]
     },
     {
-      "group": "Resources",
-      "pages": [
-        "resources/placeholders",
-        "resources/embeds",
-        "resources/fake-permissions"
-      ]
-    },
-    {
       "group": "Miscellaneous",
       "pages": [
         "server-config/ticket",
@@ -108,12 +100,11 @@
       ]
     },
     {
-      "group": "Image Manipulation",
+      "group": "Resources",
       "pages": [
-        "applications/image-manipulation/overview",
-        "applications/image-manipulation/media",
-        "applications/image-manipulation/animate",
-        "applications/image-manipulation/filter"
+        "resources/placeholders",
+        "resources/embeds",
+        "resources/fake-permissions"
       ]
     }
   ],
