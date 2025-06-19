@@ -17,12 +17,12 @@
     "suggestEdit": true
   },
   "colors": {
-    "primary": "#CCCCFF",
+    "primary": "#00FFFF",
     "light": "#E5E5FF",
     "dark": "#9999CC",
     "anchors": {
       "from": "#FFB6C1", 
-      "to": "#CCCCFF"
+      "to": "#00FFFF"
     }
   },
   "topbarLinks": [
