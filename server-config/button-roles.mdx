@@ -1,0 +1,40 @@
+---
+title: "Button roles"
+description: "Allow your members to assign themselves roles by clicking a button."
+icon: ""
+---
+
+# What are button roles?
+Button roles allow members to assign roles to themselves by clicking a button on an existing message or embed. They're perfect for letting users choose personalized roles or for setting up simple verification systems.
+
+## Creating a button role
+
+Button roles can only be added to embeds sent by Cypher. To create one, learn how to build a custom embed using our [Embed Guide](/resources/embeds) and personalize it with dynamic tags from the [Placeholders](/resources/placeholders) Reference.
+
+
+Subcommand: `.buttonrole add` <br />
+Help: Add a buttonrole, You can create multiple button roles for a single message. <br />
+
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Syntax: .buttonrole add (messagelink) (label) (role) (style) (emoji)
+       Example: .buttonrole add .../channels/... Verify @verified green ✅
+       ```
+    </Tab>
+</Tabs>
+
+## Removing a button role
+
+Subcommand: `.buttonrole remove` <br />
+Help: Remove a buttonrole, You can use the `buttonrole list` command to see all button roles & their code. <br />
+
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Syntax: .buttonrole remove (code)
+       Example: .buttonrole remove FFE3XQ
+       ```
+    </Tab>
+</Tabs>
+
