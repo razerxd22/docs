@@ -8,61 +8,90 @@ description: 'Guide to setting up auto moderation words for your server.'
 
 This will block users from sending saved words in the server
 
-<CodeGroup>
 
-```javascript Example
-?automod words enable
-```
-
-</CodeGroup>
-
-# Setup blacklist words
+Subcommand: `.automod words enable` <br />
+Help: Enable the automod words filter. <br />
 
 
-<CodeGroup>
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Example: .automod words enable
+       ```
+    </Tab>
+</Tabs>
 
-```javascript Syntax
-?automod words add <word>
-```
+## Blacklist a word
 
-```javascript Example
-?automod words add fuck
-```
+Subcommand: `.automod words add` <br />
+Help: Add a word to the blacklist. <br />
 
-</CodeGroup>
-
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Syntax: .automod words add (word)
+       Example: .automod words add zecroyn
+       ```
+    </Tab>
+</Tabs>
 
 # Change the target of the auto moderation words
 
 <Info>
-The available targets are `timeout` & `delete` 
+There are two available targets: `timeout` & `delete` , On target timeout it will delete the messages too
 </Info>
 
-<CodeGroup>
 
-```javascript Syntax
-?automod words target <action>
-```
-
-```javascript Example
-?automod words target timeout
-```
-
-</CodeGroup>
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Syntax: .automod words target (target)
+       Example: .automod words target timeout
+       ```
+    </Tab>
+</Tabs>
 
 
-# Whitelist channels, roles and users from the filter
+# Ignore channels, roles and users from the filter
 
-```
-?automod words ignore add <user>
-?automod words ignore add @fugitive
-```
+## Ignoing a target
 
-```
-?automod words ignore remove <user>
-?automod words ignore remove @fugitive
-```
+Subcommand: `.automod words ignore add` <br />
+Help: Ignore a target to the automod words filter. <br />
 
-```
-?automod words list
-```
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Syntax: .automod words ignore add (target)
+       Example: .automod words ignore add @encrypted
+       ```
+    </Tab>
+</Tabs>
+
+## Remvoing a target from ignored list
+
+Subcommand: `.automod words ignore remove` <br />
+Help: Remove a target from the automod words filter. <br />
+
+
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Syntax: .automod words ignore remove (target)
+       Example: .automod words ignore remove @encrypted
+       ```
+    </Tab>
+</Tabs>
+
+## Viewing the ignored users
+
+Subcommand: `.automod words ignore list` <br />
+Help: View all the ignored targets <br />
+
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Example: .automod words ignore list
+       ```
+    </Tab>
+</Tabs>

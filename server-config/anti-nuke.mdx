@@ -1,83 +1,80 @@
 ---
-title: 'Anti-nuke'
-description: 'Impose restrictions on moderators to prevent destructive behavior.'
+title: "Anti-nuke"
+description: "Impose restrictions on moderators to prevent destructive behavior."
 ---
 
 ## Why use an antinuke system?
 
 It's important to have an antinuke system in place to prevent moderators from abusing their permissions. This is a security measure which lets your server stay safe from any harmful actions.
 
-
 ### How does the antinuke work?
-
 
 The antinuke system will prevent unwhitelisted members from making potentially harmful changes to your server. Any unauthorized attempts to modify server settings will result in immediate action against the responsible user.
 
-
-
 <Warning>
- You must run this command if you want to enable the antinuke events
+  You must run this command if you want to enable the antinuke events
 </Warning>
 
 ## Antinuke setup
-Command:`.antinuke setup` <br />
-Help: Setup the antinuke. <br />
+
+Subcommand:`.antinuke setup` \
+
+Help: Setup the antinuke. 
 
 <Tabs>
-    <Tab title="Usage">
-       ```
-       Syntax: .antinuke setup
-       Example: .antinuke setup
-       ```
-    </Tab>
+  <Tab title="Usage">
+    ```
+    Syntax: .antinuke setup
+    Example: .antinuke setup
+    ```
+  </Tab>
 </Tabs>
-
 
 ## Admins & Whitelisted
 
-Command:`.antinuke whitelist` <br />
-Help: Whitelist or unwhitelist a user. <br />
+Command:`.antinuke whitelist` \
+
+Help: Whitelist or unwhitelist a user. 
 
 <Warning>
-This is a dangerous command and will allow the user to bypass the antinuke entirely.
+  This is a dangerous command and will allow the user to bypass the antinuke entirely.
 </Warning>
 
 <Tabs>
-    <Tab title="Usage">
-       ```
-       Syntax: .antinuke whitelist (user)
-       Example: .antinuke whitelist @encrypted
-       ```
-    </Tab>
+  <Tab title="Usage">
+    ```
+    Syntax: .antinuke whitelist (user)
+    Example: .antinuke whitelist @encrypted
+    ```
+  </Tab>
 </Tabs>
-
-
 
 ## Available antinuke modules
 
 <Accordion title="Prevents members from being banned">
   You can prevent members from being mass banned with the following module.
 </Accordion>
+
 <Accordion title="Prevents members from being kicked">
   You can prevent members from being mass kicked with the following module.
 </Accordion>
+
 <Accordion title="Prevents bots from being kicked">
   You can prevent bots from being mass added with the following module.
 </Accordion>
+
 <Accordion title="Prevents roles from being created/deleted/updated">
   You can prevent roles from being mass deleted/deleted/updated with the following module.
 </Accordion>
+
 <Accordion title="Prevents channels from being created/deleted/updated">
   You can prevent channels from being mass deleted/deleted/updated with the following module.
 </Accordion>
+
 <Accordion title="Prevent guild from being updated">
   You can prevent guild from being mass updated with the following module.
 </Accordion>
+
 <Accordion title="Prevent mass pings in the guild">
   You can prevent mass pings with the following module.
 </Accordion>
-
-
-
-
-

@@ -1,47 +1,78 @@
 ---
-title: 'Links'
-description: 'Guide to setting up auto moderation links for your server.'
+title: 'Link'
+description: 'Guide to setting up auto moderation link filter for your server.'
 
 ---
 
-# Enable the filter
+# Enabling the filter
 
-This will block users from https/www links in the server
+This will block users from sending all types of links in the server
 
-<CodeGroup>
+Subcommand: `.automod links enable` <br />
+Help: Enable the automod links filter. <br />
 
-```javascript Example
-?automod links enable
-```
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Example: .automod links enable
+       ```
+    </Tab>
+</Tabs>
 
-</CodeGroup>
+## Change the timeout minutes for the filter
 
-Change the timeout minutes for the filter
+Subcommand: `.automod links timeout` <br />
+Help: Change the timeout duration for automod. <br />
 
-<CodeGroup>
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Syntax: .automod invites timeout (minutes)
+       Example: .automod invites timeout 5
+       ```
+    </Tab>
+</Tabs>
 
-```javascript Syntax
-?automod links timeout <time>
-```
+# Ignore channels, roles and users from the filter
 
-```javascript Example
-?automod links timeout 5
-```
+## Ignoing a target
 
-</CodeGroup>
+Subcommand: `.automod links ignore add` <br />
+Help: Ignore a target to the automod links filter. <br />
 
-# Whitelist channels, roles and users from the filter
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Syntax: .automod links ignore add (target)
+       Example: .automod links ignore add @encrypted
+       ```
+    </Tab>
+</Tabs>
 
-```
-?automod spam ignore add <user>
-?automod spam ignore add @fugitive
-```
+## Remvoing a target from ignored list
 
-```
-?automod spam ignore remove <user>
-?automod spam ignore remove @fugitive
-```
+Subcommand: `.automod links ignore remove` <br />
+Help: Remove a target from the automod links filter. <br />
 
-```
-?automod spam list
-```
+
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Syntax: .automod links ignore remove (target)
+       Example: .automod links ignore remove @encrypted
+       ```
+    </Tab>
+</Tabs>
+
+## Viewing the ignored users
+
+Subcommand: `.automod links ignore list` <br />
+Help: View all the ignored targets <br />
+
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Example: .automod invites ignore list
+       ```
+    </Tab>
+</Tabs>

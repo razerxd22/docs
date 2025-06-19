@@ -1,50 +1,81 @@
 ---
 title: 'Invite'
-description: 'Guide to setting up auto moderation invites for your server.'
+description: 'Guide to setting up auto moderation invites filter for your server.'
 
 ---
 
-# Enable the filter
+# Enabling the filter
 
 This will block users from sending disord server invite links in the server
 
-
-<CodeGroup>
-
-```javascript Example
-?automod invites enable
-```
-
-</CodeGroup>
-
-Change the timeout minutes for the filter
+Subcommand: `.automod invites enable` <br />
+Help: Enable the automod invites filter. <br />
 
 
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Syntax: .automod invites (status)
+       Example: .automod invites enable
+       ```
+    </Tab>
+</Tabs>
 
-<CodeGroup>
+## Change the timeout minutes for the filter
 
-```javascript Syntax
-?automod invites timeout <time>
-```
 
-```javascript Example
-?automod invites timeout 5
-```
 
-</CodeGroup>
+Subcommand: `.automod invites timeout` <br />
+Help: Change the timeout duration for automod. <br />
 
-# Whitelist channels, roles and users from the filter
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Syntax: .automod invites timeout (minutes)
+       Example: .automod invites timeout 5
+       ```
+    </Tab>
+</Tabs>
 
-```
-?automod invites ignore add <user>
-?automod invites ignore add @fugitive
-```
+# Ignore channels, roles and users from the filter
 
-```
-?automod invites ignore remove <user>
-?automod invites ignore remove @fugitive
-```
+## Ignoing a target
 
-```
-?automod invites list
-```
+Subcommand: `.automod invites ignore add` <br />
+Help: Ignore a target to the automod invites filter. <br />
+
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Syntax: .automod invites ignore add (target)
+       Example: .automod invites ignore add @encrypted
+       ```
+    </Tab>
+</Tabs>
+
+## Remvoing a target from ignored list
+
+Subcommand: `.automod invites ignore remove` <br />
+Help: Remove a target from the automod invites filter. <br />
+
+
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Syntax: .automod invites ignore remove (target)
+       Example: .automod invites ignore remove @encrypted
+       ```
+    </Tab>
+</Tabs>
+
+## Viewing the ignored users
+
+Subcommand: `.automod invites ignore list` <br />
+Help: View all the ignored targets <br />
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Example: .automod invites ignore list
+       ```
+    </Tab>
+</Tabs>

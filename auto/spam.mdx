@@ -1,47 +1,79 @@
 ---
 title: 'Spam'
-description: 'Guide to setting up auto moderation spam for your server.'
+description: 'Guide to setting up auto moderation spam filter for your server.'
 
 ---
 
-# Enable the filter
+# Enabling the filter
 
-This will block users from sending multiple messages at a time
+This will block users from spamming in the chat
 
-<CodeGroup>
+Subcommand: `.automod spam enable` <br />
+Help: Enable the automod spam filter. <br />
 
-```javascript Example
-?automod spam enable
-```
 
-</CodeGroup>
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Example: .automod spam enable
+       ```
+    </Tab>
+</Tabs>
 
-Change the timeout minutes for the filter
+## Change the timeout minutes for the filter
 
-<CodeGroup>
+Subcommand: `.automod spam timeout` <br />
+Help: Change the timeout duration for automod. <br />
 
-```javascript Syntax
-?automod spam timeout <time>
-```
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Syntax: .automod spam timeout (minutes)
+       Example: .automod spam timeout 5
+       ```
+    </Tab>
+</Tabs>
 
-```javascript Example
-?automod spam timeout 5
-```
+# Ignore channels, roles and users from the filter
 
-</CodeGroup>
+## Ignoing a target
 
-# Whitelist channels, roles and users from the filter
+Subcommand: `.automod spam ignore add` <br />
+Help: Ignore a target to the automod spam filter. <br />
 
-```
-?automod spam ignore add <user>
-?automod spam ignore add @fugitive
-```
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Syntax: .automod spam ignore add (target)
+       Example: .automod spam ignore add @encrypted
+       ```
+    </Tab>
+</Tabs>
 
-```
-?automod spam ignore remove <user>
-?automod spam ignore remove @fugitive
-```
+## Remvoing a target from ignored list
 
-```
-?automod spam list
-```
+Subcommand: `.automod spam ignore remove` <br />
+Help: Remove a target from the automod spam filter. <br />
+
+
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Syntax: .automod spam ignore remove (target)
+       Example: .automod spam ignore remove @encrypted
+       ```
+    </Tab>
+</Tabs>
+
+## Viewing the ignored users
+
+Subcommand: `.automod spam ignore list` <br />
+Help: View all the ignored targets <br />
+
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Example: .automod spam ignore list
+       ```
+    </Tab>
+</Tabs>
