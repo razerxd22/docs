@@ -3,7 +3,7 @@
   "name": "Cypher",
   "logo": {
     "dark": "/icon.png",
-    "light": "/icon.png"
+    "light": "/icon_dark.png"
   },
   "analytics": {
     "ga4": {
@@ -89,7 +89,8 @@
 
           "icon": "fingerprint"
         },
-        "server-config/reactions"
+        "server-config/reactions",
+        "server-config/level"
       ]
     },
     {

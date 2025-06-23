@@ -1,0 +1,146 @@
+---
+title: 'Level Rewards'
+description: 'Reward your server members who are active.'
+icon: 'ranking-star'
+---
+
+# Getting started
+XP counting is already enabled in this server, If you want to disable it, run the `level config toggle` command.
+You can run the same command again to enable it back.
+
+# Ignoring channels and roles
+
+Don’t want certain channels or roles to gain XP?
+Use the levels ignore command to stop XP from being tracked in specific places. It’s a good idea to set this up right away if needed.
+
+<Info>
+Changed your mind? Just run the same command again to stop ignoring a channel or role.
+Want to see what’s currently ignored? Use `level ignore list` to check all ignored channels and roles.
+</Info>
+
+Subcommand: `.level ignore` <br />
+Help: Ignore a role or channel from getting their xp tracked. <br />
+
+<Tabs>
+    <Tab title="Channel">
+       ```
+       Syntax: .level ignore channel (channel)
+       Example: .level ignore channel #Owo
+       ```
+    </Tab>
+    <Tab title="Role">
+       ```
+       Syntax: .level ignore role (role)
+       Example: .level ignore role @blacklisted
+       ```
+    </Tab>
+</Tabs>
+
+# Setting where the level up message is sent
+
+You can choose a specific channel for level-up messages to appear in.
+By default, they’re sent in the same channel where the user leveled up.
+
+Subcommand: `.level config channel` <br />
+Help: Set the channel where level up messages will be sent. <br />
+
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Syntax: .level config channel (channel)
+       Example: .level config channel #rank
+       ```
+    </Tab>
+</Tabs>
+
+# Setting up roles to reward
+
+Want to reward members as they level up?
+Use the levels add command to set up level-based role rewards and make progression more exciting!
+
+Subcommand: `.level reward add` <br />
+Help: Setup level reward. <br />
+
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Syntax: .level reward add (level) (role)
+       Example: .level reward add 5 @Level 5
+       ```
+    </Tab>
+</Tabs>
+
+# Stacking reward roles
+With role stacking enabled (which it is by default), users will keep every role they've earned as they level up — not just the one for their current level.
+
+# Customizing level-up messages
+You can personalize the level-up message that gets sent whenever someone reaches a new level. Make it your own with a custom touch!
+
+<Info>
+You can use plain text or a [Custom Embed](https://cypherbot.space/embed) for the level-up message, and include [Dynamic Placeholders](/resources/placeholders) to make it more personalized.
+</Info>
+
+Subcommand: `.level message set` <br />
+Help: Setup custom level up message. <br />
+
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Syntax: .level message set (delete) (input)
+       Example: .level message set 0 {embed}$v{title: 🎉 Level Up!}$v{description: {user.mention} reached level {level}!}$v{color: #FFD700}
+       ```
+    </Tab>
+</Tabs>
+
+# Changing the XP multiplier
+Want to adjust how fast users level up?
+You can change the XP multiplier to increase or decrease the amount of XP members earn.
+
+Subcommand: `.level multiplier` <br />
+Help: Adjust how fast users level up. <br />
+
+<Tabs>
+    <Tab title="Channel">
+       ```
+       Syntax: .level multiplier channel (channel) (multiplier)
+       Example: .level multiplier channel #chat 5.0
+       ```
+    </Tab>
+    <Tab title="Role">
+       ```
+       Syntax: .level multiplier role (role) (multiplier)
+       Example: .level multiplier channel @Boosters 5.0
+       ```
+    </Tab>
+    <Tab title="Global">
+       ```
+       Syntax: .level multiplier global (multiplier)
+       Example: .level multiplier global 5.0
+       ```
+    </Tab>
+</Tabs>
+
+
+# Changing a member's level
+You can manually set a member’s level by assigning them a specific amount of XP whenever needed.
+
+Subcommand: `.level give` <br />
+Help: Add a specific amount of xp. <br />
+
+<Tabs>
+    <Tab title="Channel">
+       ```
+       Syntax: .level give (member) (amount)
+       Example: .level give @encrypted 50
+       ```
+    </Tab>
+</Tabs>
+
+# Related commands
+<Accordion title="Viewing a member's xp and level">
+    Want to check someone's level and XP?
+    Just use the `level` command to see their progress
+</Accordion>
+<Accordion title="Viewing the level leaderboard">
+  Use the `level leaderboard` command to see who the top XP earners are in the server.
+</Accordion>
