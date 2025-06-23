@@ -105,8 +105,10 @@
     {
       "group": "Resources",
       "pages": [
+        "resources/syntax",
         "resources/placeholders",
         "resources/embeds",
+        "resources/pagination",
         "resources/fake-permissions"
       ]
     }

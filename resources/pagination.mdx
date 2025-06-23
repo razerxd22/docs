@@ -1,0 +1,46 @@
+---
+title: 'Pagination'
+description: 'Manage paginated embeds with various setup and control commands.'
+icon: 'arrows-turn-to-dots'
+---
+
+# Overview
+
+Pagination allows you to create multi-page embeds that users can navigate using reactions.
+
+
+## Create a Pagination Embed
+
+<Steps>
+  <Step title="Create the embed">
+    Firstly you must create the embed to work with pagination. You can use `createembed` command or `embed` Commands to create an embed
+  </Step>
+  <Step title="Add the page">
+    You can continue adding more pages to your embed using this command. It supports adding as many pages as needed: `.pagination add (message_id) (embed_code)`
+  </Step>
+  <Step title="Removing a page">
+    If you want to remove a specific page from your pagination setup, use the command below: `.paginate remove (message_id) (page_number)`
+  </Step>
+</Steps>
+
+## List all pagination messages
+
+You can use the `pagination list` command to view all pagination messages.
+
+## Delete all paginations
+
+Subcommand: `.pagination delete` <br />
+Help: Delete all the paginations for a message. <br />
+
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Syntax: .pagination delete (message_id)
+       Example: .pagination delete 1386640324952195154
+       ```
+    </Tab>
+</Tabs>
+
+# Reset all pagination messages
+
+You can use the `pagination reset` command to reset all pagination messages.
