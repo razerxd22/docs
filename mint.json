@@ -18,7 +18,7 @@
   },
   "colors": {
     "primary": "#00FFFF",
-    "light": "#E5E5FF",
+    "light": "#2E2E2E",
     "dark": "#9999CC",
     "anchors": {
       "from": "#FFB6C1", 
