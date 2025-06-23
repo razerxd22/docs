@@ -98,7 +98,8 @@
       "pages": [
         "server-config/ticket",
         "server-config/webhooks",
-        "miscellaneous/giveaway"
+        "miscellaneous/giveaway",
+        "miscellaneous/statistics"
       ]
     },
     {

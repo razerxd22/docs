@@ -1,0 +1,70 @@
+---
+title: 'Counter'
+description: 'Create statistics counter in your server'
+icon: 'timer'
+---
+
+# Overview
+Counters let you display key info in your server — perfect for highlighting important stats or milestones for your members to see.
+
+# Adding a counter
+
+<Info>
+Here are the available counter options you can use:
+`members`, `bots`, `humans`, `online`, `channels`,
+`text_channels`, `voice_channels`, `categories`,
+`roles`, `emojis`, `boosts`, and `boost_level`.
+</Info>
+
+
+Subcommand: `.statistics set` <br />
+Help: Set a channel to display server statistics. <br />
+
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Syntax: .statistics set (voice_channel) (stat_type) (format)
+       Example: .statistics set #Members members Members: {count}
+       ```
+    </Tab>
+</Tabs>
+
+# Removing a counter
+
+Subcommand: `.statistics remove` <br />
+Help: Remove a channel from displaying server statistics. <br />
+
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Syntax: .statistics remove (channel)
+       Example: .statistics remove #Members
+       ```
+    </Tab>
+</Tabs>
+
+# Clearing all the counters
+
+Subcommand: `.statistics clear` <br />
+Help: Remove all channels from displaying server statistics. <br />
+
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Example: .statistics clear
+       ```
+    </Tab>
+</Tabs>
+
+# Viewing the counters config
+Subcommand: `.statistics list` <br />
+Help: View all channels displaying server statistics. <br />
+
+
+<Tabs>
+    <Tab title="Usage">
+       ```
+       Example: .statistics list
+       ```
+    </Tab>
+</Tabs>
