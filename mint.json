@@ -17,9 +17,13 @@
     "suggestEdit": true
   },
   "colors": {
-    "primary": "#00FFFF",
-    "light": "#2E2E2E",
-    "dark": "#9999CC"
+    "primary": "#658a95",
+    "light": "#95b6bd",
+    "dark": "#658a95",
+    "anchors": {
+      "from": "#658a95",
+      "to": "#95b6bd"
+    }
   },
   "topbarLinks": [
     {
