@@ -72,7 +72,6 @@
           "pages": [
             "server-config/anti-raid",
             "server-config/anti-nuke",
-            "server-config/logging",
             "server-config/jail-setup"
           ],
 
@@ -90,14 +89,16 @@
           "icon": "fingerprint"
         },
         "server-config/reactions",
-        "server-config/level"
+        "server-config/level",
+        "server-config/logging"
       ]
     },
     {
       "group": "Miscellaneous",
       "pages": [
         "server-config/ticket",
-        "server-config/webhooks"
+        "server-config/webhooks",
+        "miscellaneous/giveaway"
       ]
     },
     {
